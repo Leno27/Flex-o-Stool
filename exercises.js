@@ -40,7 +40,7 @@ const exercises = [
       "Du kannst den Vorgang beliebig oft wiederholen."
     ],
     images: ["L3.png"],
-    videoUrl: "plank.mp4",
+    videoUrl: "L3.mp4",
     audioUrl: "L3.mp3"
   },
   {
@@ -55,7 +55,7 @@ const exercises = [
       "Du kannst den Vorgang beliebig oft wiederholen."
     ],
     images: ["L4.png"],
-    videoUrl: "videos/ausfallschritte.mp4",
+    videoUrl: "L4.mp4",
     audioUrl: "L4.mp3"
   },
   {
@@ -72,7 +72,7 @@ const exercises = [
       "Du kannst die Übung nun auch mit der linken Seite durchführen."
     ],
     images: ["L5.png"],
-    videoUrl: "videos/crunches.mp4",
+    videoUrl: "L5.mp4",
     audioUrl: "L5.mp3"
   },
   {
@@ -101,7 +101,7 @@ const exercises = [
       "Löse die Haltung langsam und richte dich auf."
     ],
     images: ["L7.png"],
-    videoUrl: "videos/mountain_climber.mp4",
+    videoUrl: "L7.mp4",
     audioUrl: "L7.mp3"
   },
   {
