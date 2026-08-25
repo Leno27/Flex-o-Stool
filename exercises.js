@@ -20,7 +20,7 @@ const exercises = [
       "Setze dich aufrecht hin und lass deine Arme mit den gegriffenen Dehnungsbändern seitlich hängen.",
       "Hebe nun deine Arme gestreckt über die Seiten bis zu einem Winkel von 90 Grad. Atme dabei bewusst ein.",
       "Du kannst hier die Position halten oder leicht mit den Armen federn.",
-      "Senke die Arme anschließend über die Seiten ab und Atme dabei bewusst aus.",
+      "Senke die Arme anschließend über die Seiten ab und atme dabei bewusst aus.",
       "Du kannst den Vorgang beliebig oft wiederholen."
     ],
     images: ["L2.png"],
@@ -31,7 +31,6 @@ const exercises = [
     title: "Frontales Armheben",
     steps: [
       "Löse die Dehnungsbänder an der Hockerunterseite. Positioniere sie mittig zwischen deinen Beinen oder seitlich und verbinde sie an ihren Enden miteinander. Nutze dazu die Druckknöpfe.",
-      "Schultern direkt über Ellenbogen.",
       "Führe die Bänder zwischen deinen Beinen durch.",
       "Setze dich aufrecht hin und lass deine Arme mit den gegriffenen Dehnungsbändern mittig zwischen deinen Beinen hängen. Achte darauf, dass deine Handrücken nach oben zeigen.",
       "Hebe nun deine Arme gestreckt bis zu einem Winkel von 90 Grad vor dir an. Atme dabei bewusst ein.",
@@ -59,7 +58,7 @@ const exercises = [
     audioUrl: "L4.mp3"
   },
   {
-    title: "Wadendehnen",
+    title: "Wadendehnen mit niedriger Beinablage",
     steps: [
       "Du kannst diese Übung in verschiedenen Höhen durchführen.",
       "Wähle zu Beginn deine gewünschte Hockerhöhe aus und stelle diese durch Herausziehen oder Absenken der Sitzfläche ein.",
@@ -105,7 +104,7 @@ const exercises = [
     audioUrl: "L7.mp3"
   },
   {
-    title: "Wadendehnen",
+    title: "Wadendehnen mit hoher Beinablage",
     steps: [
       "Du kannst diese Übung in verschiedenen Höhen durchführen.",
       "Wähle zu Beginn deine gewünschte Hockerhöhe aus und stelle diese durch Herausziehen oder Absenken der Sitzfläche ein.",
@@ -213,6 +212,11 @@ function renderExercise() {
   const squares = document.querySelectorAll(".nav-square");
   squares.forEach((sq, idx) => {
     sq.classList.toggle("active", idx === currentIndex);
+  });
+  // 7. Bei Übungswechsel nach oben scrollen
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" // "smooth" für sanftes Scrollen, "auto" für sofortigen Sprung
   });
 }
 
