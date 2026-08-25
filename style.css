@@ -1,0 +1,224 @@
+:root {
+  --bg-green: #a2b097;
+  --bg-light: #f6eedf;
+  --border-black: #1a1a1a;
+  /* Etwas weicheres Schwarz/Dunkelgrau für angenehmeres Lesen */
+  --text-main: #22252a; 
+  --text-muted: #555d66;
+  /* Neue, weiche Schriftart als Hauptfont */
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f0f0f0;
+  color: var(--text-main);
+  display: flex;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased; /* Macht Schrift auf Apple-Geräten weicher */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border: 2px solid var(--border-black);
+}
+
+/* Header */
+.brand-header {
+  background-color: var(--bg-green);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-bottom: 2px solid var(--border-black);
+}
+
+.model-no {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.brand-title {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem; /* Abstand zwischen Worten und dem Punkt */
+}
+
+/* Kreisrunder Punkt mit dem Bild */
+.logo-dot {
+  display: inline-block;
+  width: 14px;                 /* Größe des Punktes */
+  height: 14px;
+  border-radius: 50%;          /* Schneidet das Bild kreisrund zu */
+  background-image: url('opt14.jpg'); /* Name deiner JPG-Datei */
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border-black); /* Optional: feiner Rand */
+  flex-shrink: 0;
+}
+
+/* Title Section mit Freiraum */
+.title-section {
+  background-color: var(--bg-light);
+  padding: 3.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--border-black);
+}
+
+.exercise-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--text-main);
+}
+
+/* Fotos zentrisch */
+.gallery-section {
+  padding: 1.5rem 1rem;
+  border-bottom: 2px solid var(--border-black);
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.img-container {
+  width: 400px;
+  height: 160px;
+  border: 1px solid ;
+  border-radius: 8px; /* Leicht abgerundete Ecken für einen weicheren Look */
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Video-Bereich */
+.video-section {
+  background-color: var(--bg-green);
+  padding: 2rem 1.5rem;
+  border-bottom: 2px solid var(--border-black);
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 320px;
+  border: 2px solid var(--border-black);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-wrapper video {
+  width: 100%;
+  display: block;
+}
+
+/* Textbereich (linksbündig, 2-spaltig) mit weicher Typografie */
+.text-section {
+  background-color: var(--bg-light);
+  padding: 2rem 1.5rem 2rem 2.5rem;
+  border-bottom: 2px solid var(--border-black);
+}
+
+.two-column-list {
+  columns: 2;
+  column-gap: 2rem;
+  text-align: left;
+}
+
+.two-column-list li {
+  margin-bottom: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.5; /* Höherer Zeilenabstand für bessere Lesbarkeit */
+  color: var(--text-main);
+  break-inside: avoid;
+}
+
+/* Schönere, weichere Nummerierung der Liste */
+.two-column-list li::marker {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Audio-Player Bereich */
+.audio-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.audio-wrapper audio {
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/* Untere Navigation */
+.bottom-nav-section {
+  background-color: var(--bg-green);
+  padding: 1.5rem 1rem 2rem 1rem;
+  text-align: center;
+}
+
+.nav-hint {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.nav-squares {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.nav-square {
+  width: 40px;                /* Optional: Größe etwas anpassen, damit das Bild gut sichtbar ist */
+  height: 40px;
+  background-color: #eee;
+  background-size: cover;     /* Bild füllt das gesamte Kästchen aus */
+  background-position: center;/* Bild zentrieren */
+  border: 1.5px solid var(--border-black);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hervorhebung für das aktive Kästchen */
+.nav-square.active {
+  border: 2px solid var(--border-black);
+  outline: 2px solid #fff;     /* Optional: Rand/Kontur für deutlichen Fokus */
+  transform: scale(1.1);       /* Leichtes Vergrößern des aktiven Buttons */
+}

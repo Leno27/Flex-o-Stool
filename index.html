@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX STOOL - Übungen</title>
+  <!-- WEICHE SCHRIFTART VON GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-container">
+    <!-- Header-Bereich -->
+    <header class="brand-header">
+      <span class="model-no">Model No. 1</span>
+      <h1 class="brand-title">
+        FLEX<span class="logo-dot"></span>STOOL
+      </h1>
+    </header>
+
+    <!-- Übungstitel mit Freiraum -->
+    <section class="title-section">
+      <h2 id="title" class="exercise-title">ÜBUNGSTITEL</h2>
+    </section>
+
+    <!-- Galerie: Fotos zentrisch angeordnet (2-5 Fotos) -->
+    <section class="gallery-section">
+      <div id="galleryGrid" class="gallery-grid">
+        <!-- Dynamische Bilder -->
+      </div>
+    </section>
+
+    <!-- Video-Bereich -->
+    <section class="video-section">
+      <div class="video-wrapper">
+        <video id="video" controls preload="metadata">
+          <source id="videoSource" src="" type="video/mp4">
+          Ihr Browser unterstützt kein Video.
+        </video>
+      </div>
+    </section>
+
+    <!-- Textbereich (linksbündig, 2-spaltig) -->
+    <section class="text-section">
+      <ol id="textList" class="two-column-list">
+        <!-- Dynamisch generierte Listenpunkte -->
+      </ol>
+
+      <!-- NEU: Audio-Player für Audiodeskription unter dem Text -->
+      <div class="audio-wrapper">
+        <audio id="audioPlayer" controls>
+          <source id="audioSource" src="" type="audio/mpeg">
+          Ihr Browser unterstützt das Audio-Element nicht.
+        </audio>
+      </div>
+    </section>
+
+    <!-- Untere Navigation -->
+    <footer class="bottom-nav-section">
+      <p class="nav-hint">&darr; Click below to change exercise &darr;</p>
+      <nav id="exerciseNav" class="nav-squares" aria-label="Übungsauswahl">
+        <!-- 9 quadratische Vorschau-Felder per JS -->
+      </nav>
+    </footer>
+  </div>
+
+  <script src="exercises.js"></script>
+</body>
+</html>
